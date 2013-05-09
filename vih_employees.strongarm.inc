@@ -205,8 +205,7 @@ function vih_employees_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_employee';
   $strongarm->value = array(
-    0 => 'moderation',
-    1 => 'revision',
+    0 => 'revision',
   );
   $export['node_options_employee'] = $strongarm;
 
@@ -224,14 +223,14 @@ function vih_employees_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_employee';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_employee'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_employee_context';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_employee_context'] = $strongarm;
 
   $strongarm = new stdClass();
