@@ -12,6 +12,7 @@ dependencies[] = features
 dependencies[] = image
 dependencies[] = media
 dependencies[] = page_manager
+dependencies[] = panopoly_pages
 dependencies[] = references_dialog
 dependencies[] = strongarm
 dependencies[] = taxonomy
