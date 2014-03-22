@@ -17,7 +17,6 @@ function vih_employees_user_default_permissions() {
       'administrator' => 'administrator',
       'kontor' => 'kontor',
       'lærer' => 'lærer',
-      'redaktør' => 'redaktør',
     ),
     'module' => 'node',
   );
@@ -28,7 +27,6 @@ function vih_employees_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'kontor' => 'kontor',
-      'redaktør' => 'redaktør',
     ),
     'module' => 'node',
   );
@@ -39,7 +37,6 @@ function vih_employees_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'kontor' => 'kontor',
-      'redaktør' => 'redaktør',
     ),
     'module' => 'node',
   );
@@ -51,7 +48,6 @@ function vih_employees_user_default_permissions() {
       'administrator' => 'administrator',
       'kontor' => 'kontor',
       'lærer' => 'lærer',
-      'redaktør' => 'redaktør',
     ),
     'module' => 'node',
   );
@@ -63,7 +59,6 @@ function vih_employees_user_default_permissions() {
       'administrator' => 'administrator',
       'kontor' => 'kontor',
       'lærer' => 'lærer',
-      'redaktør' => 'redaktør',
     ),
     'module' => 'node',
   );
