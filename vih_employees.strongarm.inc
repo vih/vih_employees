@@ -156,7 +156,8 @@ function vih_employees_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_employee';
   $strongarm->value = array(
-    0 => 'revision',
+    0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_employee'] = $strongarm;
 
