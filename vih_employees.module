@@ -5,3 +5,18 @@
  */
 
 include_once('vih_employees.features.inc');
+
+/**
+ * Implements hook_migrate_api().
+ */
+function vih_employees_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'VIHEmployees' => array('class_name' => 'VIHEmployees'),
+      'VIHEmployeesContext' => array('class_name' => 'VIHEmployeesContext'),
+    ),
+  );
+
+  return $api;
+}
