@@ -59,12 +59,12 @@ function vih_employees_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Forbindelse: Entity Reference: Refereret entity */
+  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -75,7 +75,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -85,12 +85,12 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Sorteringskriterie: Indhold: Oprettelsesdato */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Kontekstuelt filter: Indhold: Hvilken lærer? (field_employee_reference) */
+  /* Contextual filter: Content: Hvilken lærer? (field_employee_reference) */
   $handler->display->display_options['arguments']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['arguments']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['arguments']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
@@ -105,14 +105,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['arguments']['field_employee_reference_target_id']['validate_options']['types'] = array(
     'employee' => 'employee',
   );
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -170,7 +170,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -181,7 +181,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -192,19 +192,19 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Felt: Indhold: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Redigér-link */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = '';
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Slet-link */
+  /* Field: Content: Delete link */
   $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
   $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
@@ -268,7 +268,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture_1']['id'] = 'field_profile_picture_1';
   $handler->display->display_options['fields']['field_profile_picture_1']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture_1']['field'] = 'field_profile_picture';
@@ -279,7 +279,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -287,7 +287,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Hvilken lærer? */
+  /* Field: Content: Hvilken lærer? */
   $handler->display->display_options['fields']['field_employee_reference']['id'] = 'field_employee_reference';
   $handler->display->display_options['fields']['field_employee_reference']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['fields']['field_employee_reference']['field'] = 'field_employee_reference';
@@ -296,32 +296,32 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['field_employee_reference']['settings'] = array(
     'link' => 1,
   );
-  /* Felt: Indhold: Udgivet */
+  /* Field: Content: Published */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'node';
   $handler->display->display_options['fields']['status']['field'] = 'status';
   $handler->display->display_options['fields']['status']['type'] = 'unicode-yes-no';
   $handler->display->display_options['fields']['status']['not'] = 0;
-  /* Felt: Indhold: Redigér-link */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = '';
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sorteringskriterie: Indhold: Oprettelsesdato */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Sorteringskriterie: Indhold: Hvilken lærer? (field_employee_reference) */
+  /* Sort criterion: Content: Hvilken lærer? (field_employee_reference) */
   $handler->display->display_options['sorts']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['sorts']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['sorts']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -378,18 +378,18 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Forbindelse: Entity Reference: Refererende entity */
+  /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['id'] = 'reverse_field_course_leader_node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['field'] = 'reverse_field_course_leader_node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['label'] = 'Indhold referencing Indhold from field_course_leader';
-  /* Forbindelse: Entity Reference: Refereret entity */
+  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -400,7 +400,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -409,20 +409,20 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['text'] = '<h3>[title_1]</h3>';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Redigér-link */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = '';
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontekstuelt filter: Indhold: Nid */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -435,14 +435,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -496,18 +496,18 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Forbindelse: Entity Reference: Refererende entity */
+  /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['id'] = 'reverse_field_course_leader_node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['field'] = 'reverse_field_course_leader_node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['label'] = 'Indhold referencing Indhold from field_course_leader';
-  /* Forbindelse: Entity Reference: Refereret entity */
+  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -518,7 +518,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -527,29 +527,29 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['text'] = '<h3>[title_1]</h3>';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Redigér-link */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = '';
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sorteringskriterie: Indhold: Kursusleder (field_course_leader:delta) */
+  /* Sort criterion: Content: Kursusleder (field_course_leader:delta) */
   $handler->display->display_options['sorts']['delta']['id'] = 'delta';
   $handler->display->display_options['sorts']['delta']['table'] = 'field_data_field_course_leader';
   $handler->display->display_options['sorts']['delta']['field'] = 'delta';
-  /* Sorteringskriterie: Indhold: Oprettelsesdato */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontekstuelt filter: Indhold: Nid */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -562,14 +562,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -623,18 +623,18 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Forbindelse: Entity Reference: Refererende entity */
+  /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['id'] = 'reverse_field_course_leader_node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['field'] = 'reverse_field_course_leader_node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['label'] = 'Indhold referencing Indhold from field_course_leader';
-  /* Forbindelse: Entity Reference: Refereret entity */
+  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -645,7 +645,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -654,20 +654,20 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['text'] = '<h3>[title_1]</h3>';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Redigér-link */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = '';
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontekstuelt filter: Indhold: Nid */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -680,14 +680,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -701,7 +701,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -712,7 +712,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -722,7 +722,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -730,21 +730,21 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'employee_context' => 'employee_context',
   );
-  /* Filterkriterie: Søg: Søgeord */
+  /* Filter criterion: Search: Search Terms */
   $handler->display->display_options['filters']['keys']['id'] = 'keys';
   $handler->display->display_options['filters']['keys']['table'] = 'search_index';
   $handler->display->display_options['filters']['keys']['field'] = 'keys';
@@ -809,17 +809,17 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Forbindelse: Entity Reference: Refererende entity */
+  /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['id'] = 'reverse_field_course_leader_node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['field'] = 'reverse_field_course_leader_node';
-  /* Forbindelse: Entity Reference: Refereret entity */
+  /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -830,7 +830,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -841,14 +841,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Felt: Indhold: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontekstuelt filter: Indhold: Nid */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -918,7 +918,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -929,7 +929,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -940,7 +940,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Felt: Indhold: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -980,12 +980,13 @@ function vih_employees_views_default_views() {
     t('Alle'),
     t('Block teacher'),
     t('Used on the teacher to display the teachers different interests'),
+    t('more'),
     t('<h3>[title]</h3>'),
     t(' | [delete_node]'),
     t('Content pane'),
     t('Lærerne og fagene'),
-    t('Titel'),
-    t('Udgivet'),
+    t('Title'),
+    t('Published'),
     t('VIH Admin'),
     t('Block subject'),
     t('Used on the subject for displaying teachers'),
@@ -998,7 +999,7 @@ function vih_employees_views_default_views() {
     t('Søgeord'),
     t('Subject Pane'),
     t('Undervisere'),
-    t('Indhold refererer til Indhold fra field_course_leader'),
+    t('Content referencing Content from field_course_leader'),
     t('VIH Ansatte'),
     t('Teacher pane'),
   );
@@ -1037,7 +1038,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -1048,7 +1049,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1056,30 +1057,30 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Sorteringskriterie: Indhold: Titel */
+  /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  /* Kontekstuelt filter: Indhold: Nid */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
   $handler->display->display_options['arguments']['nid']['exception']['title'] = 'Alle';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'employee' => 'employee',
   );
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = '1';
-  /* Filterkriterie: Indhold: Type (field_employee_type) */
+  /* Filter criterion: Content: Type (field_employee_type) */
   $handler->display->display_options['filters']['field_employee_type_tid']['id'] = 'field_employee_type_tid';
   $handler->display->display_options['filters']['field_employee_type_tid']['table'] = 'field_data_field_employee_type';
   $handler->display->display_options['filters']['field_employee_type_tid']['field'] = 'field_employee_type_tid';
@@ -1099,7 +1100,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1122,7 +1123,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -1133,7 +1134,7 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1174,7 +1175,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -1185,20 +1186,20 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = 'Navn';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Felt: Indhold: Udgivet */
+  /* Field: Content: Published */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'node';
   $handler->display->display_options['fields']['status']['field'] = 'status';
   $handler->display->display_options['fields']['status']['type'] = 'unicode-yes-no';
   $handler->display->display_options['fields']['status']['not'] = 0;
-  /* Felt: Indhold: Redigér-link */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
@@ -1206,14 +1207,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'employee' => 'employee',
   );
-  /* Filterkriterie: Indhold: Type (field_employee_type) */
+  /* Filter criterion: Content: Type (field_employee_type) */
   $handler->display->display_options['filters']['field_employee_type_tid']['id'] = 'field_employee_type_tid';
   $handler->display->display_options['filters']['field_employee_type_tid']['table'] = 'field_data_field_employee_type';
   $handler->display->display_options['filters']['field_employee_type_tid']['field'] = 'field_employee_type_tid';
@@ -1259,7 +1260,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: Billede */
+  /* Field: Content: Billede */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
@@ -1270,20 +1271,20 @@ function vih_employees_views_default_views() {
     'image_style' => 'thumbnail',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = 'Navn';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Felt: Indhold: Udgivet */
+  /* Field: Content: Published */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'node';
   $handler->display->display_options['fields']['status']['field'] = 'status';
   $handler->display->display_options['fields']['status']['type'] = 'unicode-yes-no';
   $handler->display->display_options['fields']['status']['not'] = 0;
-  /* Felt: Indhold: Redigér-link */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
@@ -1291,14 +1292,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'employee' => 'employee',
   );
-  /* Filterkriterie: Indhold: Type (field_employee_type) */
+  /* Filter criterion: Content: Type (field_employee_type) */
   $handler->display->display_options['filters']['field_employee_type_tid']['id'] = 'field_employee_type_tid';
   $handler->display->display_options['filters']['field_employee_type_tid']['table'] = 'field_data_field_employee_type';
   $handler->display->display_options['filters']['field_employee_type_tid']['field'] = 'field_employee_type_tid';
@@ -1347,12 +1348,13 @@ function vih_employees_views_default_views() {
     t('Alle'),
     t('Sidebar block'),
     t('Text links to employees in an unformatted list.'),
+    t('more'),
     t('Grid block'),
     t('Show a grid with teachers and pictures'),
     t('Content pane'),
     t('Faste lærere'),
     t('Navn'),
-    t('Udgivet'),
+    t('Published'),
     t('VIH Admin'),
     t('Content pane - other'),
     t('Andre ansatte'),

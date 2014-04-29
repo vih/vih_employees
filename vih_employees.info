@@ -60,5 +60,4 @@ features[variable][] = node_submitted_employee
 features[variable][] = node_submitted_employee_context
 features[views_view][] = employees_context
 features[views_view][] = employees_list
-
 files[] = vih_employees.migrate.inc
