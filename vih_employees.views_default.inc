@@ -927,7 +927,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
