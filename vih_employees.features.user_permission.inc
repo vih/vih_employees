@@ -15,8 +15,8 @@ function vih_employees_user_default_permissions() {
     'name' => 'create employee content',
     'roles' => array(
       'administrator' => 'administrator',
-      'kontor' => 'kontor',
-      'lærer' => 'lærer',
+      'office' => 'office',
+      'teacher' => 'teacher',
     ),
     'module' => 'node',
   );
@@ -26,7 +26,7 @@ function vih_employees_user_default_permissions() {
     'name' => 'delete any employee content',
     'roles' => array(
       'administrator' => 'administrator',
-      'kontor' => 'kontor',
+      'office' => 'office',
     ),
     'module' => 'node',
   );
@@ -36,7 +36,7 @@ function vih_employees_user_default_permissions() {
     'name' => 'delete own employee content',
     'roles' => array(
       'administrator' => 'administrator',
-      'kontor' => 'kontor',
+      'office' => 'office',
     ),
     'module' => 'node',
   );
@@ -46,8 +46,8 @@ function vih_employees_user_default_permissions() {
     'name' => 'edit any employee content',
     'roles' => array(
       'administrator' => 'administrator',
-      'kontor' => 'kontor',
-      'lærer' => 'lærer',
+      'office' => 'office',
+      'teacher' => 'teacher',
     ),
     'module' => 'node',
   );
@@ -57,8 +57,8 @@ function vih_employees_user_default_permissions() {
     'name' => 'edit own employee content',
     'roles' => array(
       'administrator' => 'administrator',
-      'kontor' => 'kontor',
-      'lærer' => 'lærer',
+      'office' => 'office',
+      'teacher' => 'teacher',
     ),
     'module' => 'node',
   );
