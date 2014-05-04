@@ -37,6 +37,7 @@ function vih_employees_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'office' => 'office',
+      'teacher' => 'teacher',
     ),
     'module' => 'node',
   );
