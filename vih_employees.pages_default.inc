@@ -347,7 +347,7 @@ function vih_employees_default_page_manager_handlers() {
     $pane->pid = 'new-d51e5452-8d58-493a-822a-94e5c495c80a';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_profile_picture';
+    $pane->subtype = 'node:field_featured_image';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(

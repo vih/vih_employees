@@ -39,12 +39,12 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_profile_picture' => 'field_profile_picture',
+    'field_featured_image' => 'field_featured_image',
     'title' => 'title',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_profile_picture' => array(
+    'field_featured_image' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -64,14 +64,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => 'content',
   );
@@ -126,7 +126,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_profile_picture' => 'field_profile_picture',
+    'field_featured_image' => 'field_featured_image',
     'title' => 'title',
     'body' => 'title',
     'edit_node' => 'title',
@@ -134,7 +134,7 @@ function vih_employees_views_default_views() {
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_profile_picture' => array(
+    'field_featured_image' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -170,14 +170,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
@@ -230,14 +230,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_profile_picture_1' => 'field_profile_picture_1',
+    'field_featured_image_1' => 'field_featured_image_1',
     'title' => 'title',
     'field_employee_reference' => 'title',
     'edit_node' => 'edit_node',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_profile_picture_1' => array(
+    'field_featured_image_1' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -268,14 +268,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture_1']['id'] = 'field_profile_picture_1';
-  $handler->display->display_options['fields']['field_profile_picture_1']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture_1']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture_1']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture_1']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture_1']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image_1']['id'] = 'field_featured_image_1';
+  $handler->display->display_options['fields']['field_featured_image_1']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image_1']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image_1']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image_1']['settings'] = array(
     'image_style' => 'thumbnail',
     'image_link' => 'content',
   );
@@ -340,14 +340,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_profile_picture' => 'field_profile_picture',
+    'field_featured_image' => 'field_featured_image',
     'title_1' => 'title_1',
     'body' => 'title_1',
     'edit_node' => 'title_1',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_profile_picture' => array(
+    'field_featured_image' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -389,14 +389,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
@@ -458,14 +458,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_profile_picture' => 'field_profile_picture',
+    'field_featured_image' => 'field_featured_image',
     'title_1' => 'title_1',
     'body' => 'title_1',
     'edit_node' => 'title_1',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_profile_picture' => array(
+    'field_featured_image' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -507,14 +507,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
@@ -585,14 +585,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_profile_picture' => 'field_profile_picture',
+    'field_featured_image' => 'field_featured_image',
     'title_1' => 'title_1',
     'body' => 'title_1',
     'edit_node' => 'title_1',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_profile_picture' => array(
+    'field_featured_image' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -634,14 +634,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
@@ -701,14 +701,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => 'content',
   );
@@ -777,13 +777,13 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_profile_picture' => 'field_profile_picture',
+    'field_featured_image' => 'field_featured_image',
     'title' => 'body',
     'body' => 'body',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_profile_picture' => array(
+    'field_featured_image' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -819,14 +819,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
@@ -886,13 +886,13 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_profile_picture' => 'field_profile_picture',
+    'field_featured_image' => 'field_featured_image',
     'title' => 'title',
     'body' => 'title',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_profile_picture' => array(
+    'field_featured_image' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -918,14 +918,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => '',
   );
@@ -1038,14 +1038,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => 'content',
   );
@@ -1123,14 +1123,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail_tall_employee',
     'image_link' => 'content',
   );
@@ -1175,14 +1175,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail',
     'image_link' => 'content',
   );
@@ -1260,14 +1260,14 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Billede */
-  $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['field'] = 'field_profile_picture';
-  $handler->display->display_options['fields']['field_profile_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_picture']['settings'] = array(
+  /* Field: Field: Featured image */
+  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
+  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => 'thumbnail',
     'image_link' => 'content',
   );
