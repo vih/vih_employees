@@ -105,10 +105,10 @@ class VIHEmployeesContext extends VIHMigration {
       ->sourceMigration('VIHEmployees');
 
     // Images
-    $this->addFieldMapping('field_profile_picture', 'all_images');
-    $this->addFieldMapping('field_profile_picture:file_replace')
+    $this->addFieldMapping('field_featured_image', 'all_images');
+    $this->addFieldMapping('field_featured_image:file_replace')
       ->defaultValue(FILE_EXISTS_REPLACE);
-    $this->addFieldMapping('field_profile_picture:source_dir')
+    $this->addFieldMapping('field_featured_image:source_dir')
       ->defaultValue(drupal_get_path('module', 'vih_employees') . '/import/images');
 
     $this->addFieldMapping('uid', 'uid');
