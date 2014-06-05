@@ -44,16 +44,16 @@ function vih_employees_strongarm() {
           'weight' => '0',
         ),
         'xmlsitemap' => array(
-          'weight' => '7',
+          'weight' => '9',
         ),
         'path' => array(
-          'weight' => '6',
-        ),
-        'metatags' => array(
           'weight' => '7',
         ),
-        'redirect' => array(
+        'metatags' => array(
           'weight' => '8',
+        ),
+        'redirect' => array(
+          'weight' => '10',
         ),
       ),
       'display' => array(),
