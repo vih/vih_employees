@@ -43,6 +43,11 @@ class VIHEmployees extends VIHMigration {
     $this->addFieldMapping('field_featured_image:source_dir')
       ->defaultValue(drupal_get_path('module', 'vih_employees') . '/import/images');
 
+    $this->addFieldMapping('field_employee_type', 'category');
+    $this->addFieldMapping('field_employee_type:create_term')
+      ->defaultValue(TRUE);
+
+
     $this->addFieldMapping('uid', 'uid');
     $this->addFieldMapping('language', 'language');
   }
@@ -54,10 +59,7 @@ class VIHEmployees extends VIHMigration {
     $columns[3] = array('info', 'Info');
     $columns[4] = array('email', 'Email');
     $columns[5] = array('images', 'Picture');
-    /*
-    $columns[5] = array('images', 'Images');
-    $columns[6] = array('hexadecimal', 'Hexadecimal');
-    */
+    $columns[6] = array('category', 'Category');
     return $columns;
   }
 

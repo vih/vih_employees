@@ -45,5 +45,6 @@ function vih_employees_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

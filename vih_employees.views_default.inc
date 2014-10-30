@@ -1247,6 +1247,11 @@ function vih_employees_views_default_views() {
     108 => '108',
   );
   $handler->display->display_options['filters']['field_employee_type_tid']['group'] = '0';
+  $handler->display->display_options['filters']['field_employee_type_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_employee_type_tid']['expose']['operator_id'] = 'field_employee_type_tid_op';
+  $handler->display->display_options['filters']['field_employee_type_tid']['expose']['label'] = 'Type (field_employee_type)';
+  $handler->display->display_options['filters']['field_employee_type_tid']['expose']['operator'] = 'field_employee_type_tid_op';
+  $handler->display->display_options['filters']['field_employee_type_tid']['expose']['identifier'] = 'field_employee_type_tid';
   $handler->display->display_options['filters']['field_employee_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_employee_type_tid']['vocabulary'] = 'employee_type';
 
@@ -1484,6 +1489,40 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'employee' => 'employee',
+  );
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  /* Filter criterion: Content: Type (field_employee_type) */
+  $handler->display->display_options['filters']['field_employee_type_tid']['id'] = 'field_employee_type_tid';
+  $handler->display->display_options['filters']['field_employee_type_tid']['table'] = 'field_data_field_employee_type';
+  $handler->display->display_options['filters']['field_employee_type_tid']['field'] = 'field_employee_type_tid';
+  $handler->display->display_options['filters']['field_employee_type_tid']['group'] = '0';
+  $handler->display->display_options['filters']['field_employee_type_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_employee_type_tid']['expose']['operator_id'] = 'field_employee_type_tid_op';
+  $handler->display->display_options['filters']['field_employee_type_tid']['expose']['label'] = 'Type';
+  $handler->display->display_options['filters']['field_employee_type_tid']['expose']['operator'] = 'field_employee_type_tid_op';
+  $handler->display->display_options['filters']['field_employee_type_tid']['expose']['identifier'] = 'field_employee_type_tid';
+  $handler->display->display_options['filters']['field_employee_type_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    6 => 0,
+    5 => 0,
+  );
+  $handler->display->display_options['filters']['field_employee_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_employee_type_tid']['vocabulary'] = 'employee_type';
   $handler->display->display_options['pane_category']['name'] = 'VIH Ansatte';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
@@ -1493,7 +1532,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['allow']['more_link'] = 0;
   $handler->display->display_options['allow']['path_override'] = 0;
   $handler->display->display_options['allow']['title_override'] = 'title_override';
-  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
   $handler->display->display_options['allow']['fields_override'] = 0;
   $translatables['employees_list'] = array(
     t('Defaults'),
@@ -1505,6 +1544,7 @@ function vih_employees_views_default_views() {
     t('Stigende'),
     t('Faldende'),
     t('Alle'),
+    t('Type (field_employee_type)'),
     t('Sidebar block'),
     t('Text links to employees in an unformatted list.'),
     t('more'),
@@ -1519,6 +1559,7 @@ function vih_employees_views_default_views() {
     t('Andre ansatte'),
     t('Teacher pane'),
     t('Mød højskolelærerne'),
+    t('Type'),
     t('VIH Ansatte'),
   );
   $export['employees_list'] = $view;

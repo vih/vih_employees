@@ -6,6 +6,7 @@ version = 7.x-0.14
 project = vih_employees
 dependencies[] = colorbox
 dependencies[] = ctools
+dependencies[] = defaultconfig
 dependencies[] = email
 dependencies[] = entityreference
 dependencies[] = features
