@@ -22,6 +22,7 @@ dependencies[] = text
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = vih_fields
+dependencies[] = vih_migrate
 datestamp = 1346221374
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = strongarm:strongarm:1
