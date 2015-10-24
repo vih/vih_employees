@@ -31,15 +31,15 @@ function vih_employees_node_info() {
     'employee' => array(
       'name' => t('Employee'),
       'base' => 'node_content',
-      'description' => t('Description of the employee.'),
+      'description' => t('Use <em>employee</em> to describe the employee of any sort.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
     ),
     'employee_context' => array(
-      'name' => t('Underviserprofil'),
+      'name' => t('Employee profile'),
       'base' => 'node_content',
-      'description' => t('Bruges til ansatte som skal vises i en bestemt sammenhæng på hjemmesiden, fx lærere der underviser i specielle fag eller er kursusledere.'),
+      'description' => t('Use <em>employee profile</em> to showcase <em>employee</em> in a certain a certain context, e.g. teachers which has special <em>subjects</em> or is a course leader.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
