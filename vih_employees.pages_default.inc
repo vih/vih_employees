@@ -218,6 +218,9 @@ function vih_employees_default_page_manager_handlers() {
     'view_settings' => 'fields',
     'header_type' => 'none',
     'view_mode' => 'teaser',
+    'context' => array(
+      0 => 'argument_entity_id:node_1',
+    ),
   );
   $pane->cache = array();
   $pane->style = array(
@@ -231,43 +234,6 @@ function vih_employees_default_page_manager_handlers() {
   $pane->uuid = 'ac4f45c0-d47c-45b9-b829-841f1b9ddb14';
   $display->content['new-ac4f45c0-d47c-45b9-b829-841f1b9ddb14'] = $pane;
   $display->panels['bottom'][2] = 'new-ac4f45c0-d47c-45b9-b829-841f1b9ddb14';
-  $pane = new stdClass();
-  $pane->pid = 'new-4afbf3d0-0a43-43ff-8e59-a5f9a77cac64';
-  $pane->panel = 'bottom';
-  $pane->type = 'views';
-  $pane->subtype = 'short_courses';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'override_pager_settings' => 0,
-    'use_pager' => 1,
-    'nodes_per_page' => '50',
-    'pager_id' => '0',
-    'offset' => '0',
-    'more_link' => 0,
-    'feed_icons' => 0,
-    'panel_args' => 0,
-    'link_to_view' => 0,
-    'args' => '',
-    'url' => '',
-    'display' => 'block_1',
-    'context' => array(
-      0 => 'argument_entity_id:node_1.nid',
-    ),
-    'override_title' => 0,
-    'override_title_text' => '',
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 3;
-  $pane->locks = array();
-  $pane->uuid = '4afbf3d0-0a43-43ff-8e59-a5f9a77cac64';
-  $display->content['new-4afbf3d0-0a43-43ff-8e59-a5f9a77cac64'] = $pane;
-  $display->panels['bottom'][3] = 'new-4afbf3d0-0a43-43ff-8e59-a5f9a77cac64';
   $pane = new stdClass();
   $pane->pid = 'new-ab25c96a-5615-41a6-af1c-f2fbf9f68af4';
   $pane->panel = 'left';
