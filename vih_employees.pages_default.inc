@@ -208,32 +208,38 @@ function vih_employees_default_page_manager_handlers() {
   $display->content['new-41f7b41c-ab58-451e-9ed3-d5b9d493f3b0'] = $pane;
   $display->panels['bottom'][1] = 'new-41f7b41c-ab58-451e-9ed3-d5b9d493f3b0';
   $pane = new stdClass();
-  $pane->pid = 'new-ac4f45c0-d47c-45b9-b829-841f1b9ddb14';
+  $pane->pid = 'new-507de832-094c-4728-a971-de91a0b2564c';
   $pane->panel = 'bottom';
   $pane->type = 'views_panes';
-  $pane->subtype = 'employees_context-panel_pane_4';
+  $pane->subtype = 'employees_list-panel_pane_4';
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'view_settings' => 'fields',
-    'header_type' => 'none',
-    'view_mode' => 'teaser',
     'context' => array(
       0 => 'argument_entity_id:node_1',
     ),
+    'override_title' => '',
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+    'view_settings' => 'fields',
+    'header_type' => 'titles',
+    'view_mode' => 'teaser',
+    'widget_title' => '',
   );
   $pane->cache = array();
   $pane->style = array(
-    'settings' => NULL,
+    'settings' => array(
+      'style' => 'alternate',
+    ),
     'style' => 'vih_box_highlight',
   );
   $pane->css = array();
   $pane->extras = array();
   $pane->position = 2;
   $pane->locks = array();
-  $pane->uuid = 'ac4f45c0-d47c-45b9-b829-841f1b9ddb14';
-  $display->content['new-ac4f45c0-d47c-45b9-b829-841f1b9ddb14'] = $pane;
-  $display->panels['bottom'][2] = 'new-ac4f45c0-d47c-45b9-b829-841f1b9ddb14';
+  $pane->uuid = '507de832-094c-4728-a971-de91a0b2564c';
+  $display->content['new-507de832-094c-4728-a971-de91a0b2564c'] = $pane;
+  $display->panels['bottom'][2] = 'new-507de832-094c-4728-a971-de91a0b2564c';
   $pane = new stdClass();
   $pane->pid = 'new-ab25c96a-5615-41a6-af1c-f2fbf9f68af4';
   $pane->panel = 'left';
