@@ -1228,7 +1228,6 @@ function vih_employees_views_default_views() {
   /* Display: Admin pane */
   $handler = $view->new_display('panel_pane', 'Admin pane', 'panel_pane_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Faste lærere';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -1327,7 +1326,7 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['allow']['more_link'] = 0;
   $handler->display->display_options['allow']['path_override'] = 0;
   $handler->display->display_options['allow']['title_override'] = 'title_override';
-  $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 0;
   $handler->display->display_options['allow']['panopoly_magic_display_type'] = 0;
 
@@ -1361,6 +1360,9 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['filters']['field_employee_type_tid']['id'] = 'field_employee_type_tid';
   $handler->display->display_options['filters']['field_employee_type_tid']['table'] = 'field_data_field_employee_type';
   $handler->display->display_options['filters']['field_employee_type_tid']['field'] = 'field_employee_type_tid';
+  $handler->display->display_options['filters']['field_employee_type_tid']['value'] = array(
+    1 => '1',
+  );
   $handler->display->display_options['filters']['field_employee_type_tid']['group'] = '0';
   $handler->display->display_options['filters']['field_employee_type_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_employee_type_tid']['expose']['operator_id'] = 'field_employee_type_tid_op';
@@ -1506,7 +1508,6 @@ function vih_employees_views_default_views() {
     t('Grid block'),
     t('Show a grid with teachers and pictures'),
     t('Admin pane'),
-    t('Faste lærere'),
     t('Navn'),
     t('Published'),
     t('Employee type'),
