@@ -63,7 +63,6 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
-  $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   /* Field: Field: Billede */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
@@ -170,12 +169,10 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['id'] = 'reverse_field_course_leader_node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['field'] = 'reverse_field_course_leader_node';
-  $handler->display->display_options['relationships']['reverse_field_course_leader_node']['label'] = 'Indhold referencing Indhold from field_course_leader';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
-  $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Field: Billede */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
@@ -381,12 +378,10 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['id'] = 'reverse_field_course_leader_node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['field'] = 'reverse_field_course_leader_node';
-  $handler->display->display_options['relationships']['reverse_field_course_leader_node']['label'] = 'Indhold referencing Indhold from field_course_leader';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
-  $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Field: Billede */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
@@ -508,12 +503,10 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['id'] = 'reverse_field_course_leader_node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_course_leader_node']['field'] = 'reverse_field_course_leader_node';
-  $handler->display->display_options['relationships']['reverse_field_course_leader_node']['label'] = 'Indhold referencing Indhold from field_course_leader';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
-  $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Field: Billede */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
@@ -598,7 +591,6 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['id'] = 'field_employee_reference_target_id';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['table'] = 'field_data_field_employee_reference';
   $handler->display->display_options['relationships']['field_employee_reference_target_id']['field'] = 'field_employee_reference_target_id';
-  $handler->display->display_options['relationships']['field_employee_reference_target_id']['label'] = 'Indhold entity referenced from field_employee_reference';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Field: Billede */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
@@ -1047,13 +1039,11 @@ function vih_employees_views_default_views() {
     t('Sortér efter'),
     t('Stigende'),
     t('Faldende'),
-    t('Indhold entity referenced from field_employee_reference'),
     t('<h2>[title]</h2>'),
     t('Alle'),
     t('Block subject'),
     t('Used on the subject for displaying teachers'),
     t('more'),
-    t('Indhold referencing Indhold from field_course_leader'),
     t('<h3>[title_1]</h3>'),
     t('Block teacher'),
     t('Used on the teacher to display the teachers different interests'),
