@@ -1039,11 +1039,13 @@ function vih_employees_views_default_views() {
     t('Sortér efter'),
     t('Stigende'),
     t('Faldende'),
+    t('Content entity referenced from field_employee_reference'),
     t('<h2>[title]</h2>'),
     t('Alle'),
     t('Block subject'),
     t('Used on the subject for displaying teachers'),
     t('more'),
+    t('Content referencing Content from field_course_leader'),
     t('<h3>[title_1]</h3>'),
     t('Block teacher'),
     t('Used on the teacher to display the teachers different interests'),
@@ -1055,10 +1057,8 @@ function vih_employees_views_default_views() {
     t('Reference Teacher Pane'),
     t('Undervisere'),
     t('Use pane on courses and subjects to show teacher contexts added to the entities.'),
-    t('Content referencing Content from field_course_leader'),
     t('VIH Employees'),
     t('Teacher all pane'),
-    t('Content entity referenced from field_employee_reference'),
     t('Admin pane'),
     t('Lærerne og fagene'),
     t('Title'),
@@ -1288,9 +1288,6 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['filters']['field_employee_type_tid']['id'] = 'field_employee_type_tid';
   $handler->display->display_options['filters']['field_employee_type_tid']['table'] = 'field_data_field_employee_type';
   $handler->display->display_options['filters']['field_employee_type_tid']['field'] = 'field_employee_type_tid';
-  $handler->display->display_options['filters']['field_employee_type_tid']['value'] = array(
-    1 => '1',
-  );
   $handler->display->display_options['filters']['field_employee_type_tid']['group'] = '0';
   $handler->display->display_options['filters']['field_employee_type_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_employee_type_tid']['expose']['operator_id'] = 'field_employee_type_tid_op';
@@ -1307,6 +1304,7 @@ function vih_employees_views_default_views() {
   );
   $handler->display->display_options['filters']['field_employee_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_employee_type_tid']['vocabulary'] = 'employee_type';
+  $handler->display->display_options['filters']['field_employee_type_tid']['error_message'] = FALSE;
   $handler->display->display_options['pane_category']['name'] = 'VIH Admin';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
@@ -1350,9 +1348,6 @@ function vih_employees_views_default_views() {
   $handler->display->display_options['filters']['field_employee_type_tid']['id'] = 'field_employee_type_tid';
   $handler->display->display_options['filters']['field_employee_type_tid']['table'] = 'field_data_field_employee_type';
   $handler->display->display_options['filters']['field_employee_type_tid']['field'] = 'field_employee_type_tid';
-  $handler->display->display_options['filters']['field_employee_type_tid']['value'] = array(
-    1 => '1',
-  );
   $handler->display->display_options['filters']['field_employee_type_tid']['group'] = '0';
   $handler->display->display_options['filters']['field_employee_type_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_employee_type_tid']['expose']['operator_id'] = 'field_employee_type_tid_op';
@@ -1369,6 +1364,7 @@ function vih_employees_views_default_views() {
   );
   $handler->display->display_options['filters']['field_employee_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_employee_type_tid']['vocabulary'] = 'employee_type';
+  $handler->display->display_options['filters']['field_employee_type_tid']['error_message'] = FALSE;
   $handler->display->display_options['pane_category']['name'] = 'VIH Employees';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;

@@ -10,7 +10,7 @@
 function vih_employees_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_employee_reference'
+  // Exported field_base: 'field_employee_reference'.
   $field_bases['field_employee_reference'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -49,7 +49,7 @@ function vih_employees_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_employee_type'
+  // Exported field_base: 'field_employee_type'.
   $field_bases['field_employee_type'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -75,7 +75,7 @@ function vih_employees_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_featured_context'
+  // Exported field_base: 'field_featured_context'.
   $field_bases['field_featured_context'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -110,7 +110,7 @@ function vih_employees_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_vih_email'
+  // Exported field_base: 'field_vih_email'.
   $field_bases['field_vih_email'] = array(
     'active' => 1,
     'cardinality' => 1,

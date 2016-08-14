@@ -10,7 +10,7 @@
 function vih_employees_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-employee-body'
+  // Exported field_instance: 'node-employee-body'.
   $field_instances['node-employee-body'] = array(
     'bundle' => 'employee',
     'default_value' => NULL,
@@ -85,7 +85,7 @@ function vih_employees_field_default_field_instances() {
     'widget_type' => 'text_textarea_with_summary',
   );
 
-  // Exported field_instance: 'node-employee-field_employee_type'
+  // Exported field_instance: 'node-employee-field_employee_type'.
   $field_instances['node-employee-field_employee_type'] = array(
     'bundle' => 'employee',
     'default_value' => NULL,
@@ -127,7 +127,7 @@ function vih_employees_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employee-field_featured_context'
+  // Exported field_instance: 'node-employee-field_featured_context'.
   $field_instances['node-employee-field_featured_context'] = array(
     'bundle' => 'employee',
     'default_value' => NULL,
@@ -180,7 +180,7 @@ function vih_employees_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employee-field_featured_image'
+  // Exported field_instance: 'node-employee-field_featured_image'.
   $field_instances['node-employee-field_featured_image'] = array(
     'bundle' => 'employee',
     'deleted' => 0,
@@ -266,7 +266,7 @@ function vih_employees_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employee-field_info'
+  // Exported field_instance: 'node-employee-field_info'.
   $field_instances['node-employee-field_info'] = array(
     'bundle' => 'employee',
     'default_value' => NULL,
@@ -336,7 +336,7 @@ function vih_employees_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employee-field_vih_email'
+  // Exported field_instance: 'node-employee-field_vih_email'.
   $field_instances['node-employee-field_vih_email'] = array(
     'bundle' => 'employee',
     'default_value' => NULL,
@@ -381,7 +381,7 @@ function vih_employees_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employee_context-body'
+  // Exported field_instance: 'node-employee_context-body'.
   $field_instances['node-employee_context-body'] = array(
     'bundle' => 'employee_context',
     'default_value' => NULL,
@@ -432,7 +432,7 @@ function vih_employees_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employee_context-field_employee_reference'
+  // Exported field_instance: 'node-employee_context-field_employee_reference'.
   $field_instances['node-employee_context-field_employee_reference'] = array(
     'bundle' => 'employee_context',
     'default_value' => NULL,
@@ -488,7 +488,7 @@ function vih_employees_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-employee_context-field_featured_image'
+  // Exported field_instance: 'node-employee_context-field_featured_image'.
   $field_instances['node-employee_context-field_featured_image'] = array(
     'bundle' => 'employee_context',
     'deleted' => 0,
